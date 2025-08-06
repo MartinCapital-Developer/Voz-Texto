@@ -6,7 +6,7 @@ const path = require("path");
 
 const app = express();
 const upload = multer({ dest: "uploads/" });
-const deepgramApiKey = process.env.DEEPGRAM_API_KEY;
+const DEEPGRAM_API_KEY = process.env.DEEPGRAM_API_KEY;
 
 // Servir frontend estático
 app.use(express.static("public"));
