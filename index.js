@@ -6,7 +6,7 @@ const path = require("path");
 
 const app = express();
 const upload = multer({ dest: "uploads/" });
-const DEEPGRAM_API_KEY = "bd7c5287a60f918fead982b5a83f6f80675cd289"; // 🔐 Sustituye con tu clave real
+const deepgramApiKey = process.env.DEEPGRAM_API_KEY;
 
 // Servir frontend estático
 app.use(express.static("public"));
